@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prestours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+        
+    <!---- header start---->
+    <section id="home">
+         <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="icon/hiking.png" alt="Prestours Logo">
+                </div>
+                <h2>PRES<span>TOURS</span></h2>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active"><i class="ri-home-4-line"></i>Home</a></li>
+                    <li><a href="#package"><i class="ri-suitcase-line"></i>Packages</a></li>
+                    <li><a href="#destination"><i class="ri-map-pin-line"></i>Destinations</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><i class="ri-attractions-line"></i>Attractions</a>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Activities</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>National Parks</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Water Falls</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Lakes & Rivers</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Cities & Towns</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Arts & History</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Traditional ceremonies</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><i class="ri-compass-3-line"></i>Discover</a>
+                        <div class="dropdown-content">
+                            <a href="#services"><i class="ri-service-line"></i>Services</a>
+                            <a href="#home-about"><i class="ri-information-line"></i>About Us</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact"><i class="ri-customer-service-2-line"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="ri-article-line"></i>Blog</a> </li>
+        </ul>
+            </div>
+                
+                <div id="menu-btn"><i class="ri-menu-fill"></i></div>
+            </div>
+        </nav>
+         
+    </section>
+
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>Tourism Blog</h1>
+            <p>Discover the latest travel insights, tips, and stories from Zambia</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="category-container">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="destinations">Destinations</button>
+            <button class="category-btn" data-category="adventure">Adventure</button>
+            <button class="category-btn" data-category="culture">Culture</button>
+            <button class="category-btn" data-category="wildlife">Wildlife</button>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="blog-container">
+            <!-- Featured Post -->
+            <article class="blog-post featured">
+                <div class="post-image">
+                    <img src="images/Namutitima.jpg" alt="Victoria Falls">
+                    <span class="category-tag">Destinations</span>
+                </div>
+                <div class="post-content">
+                    <h2>The Majestic Victoria Falls: A Natural Wonder</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                        <span><i class="fas fa-user"></i> By jeff katongo</span>
+                    </div>
+                    <p>Experience the awe-inspiring Victoria Falls, one of the Seven Natural Wonders of the World. Learn about the best viewing spots, activities, and the best time to visit this magnificent waterfall.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Regular Posts -->
+            <div class="posts-grid">
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="images/LUIWA NAT.jpg" alt="Safari Adventure">
+                        <span class="category-tag">Wildlife</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Luiwa National Park: A Safari Paradise</h3>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="fas fa-user"></i> By prince Banda</span>
+                        </div>
+                        <p>Discover why Luiwa National park is considered one of Africa's premier wildlife destinations.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="images/Kuomboka ceremony .jpg" alt="Traditional Ceremony">
+                        <span class="category-tag">Culture</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Kuomboka Ceremony: A Cultural Spectacle</h3>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="fas fa-user"></i> By David Phiri</span>
+                        </div>
+                        <p>Experience the rich cultural heritage of Zambia through its traditional ceremonies.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="images/BUSH TRACK VIH.jpg" alt="Adventure Activities">
+                        <span class="category-tag">Adventure</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Thrilling Adventures in Livingstone</h3>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> March 1, 2024</span>
+                            <span><i class="fas fa-user"></i> By Lisa Namuchile</span>
+                        </div>
+                        <p>From bungee jumping to white water rafting, discover the adrenaline-pumping activities in Livingstone.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    
+<section class="subscribe">
+
+    <div class="section-container">
+
+        <h2>subscribe to our newsletter</h2>
+    <div>
+    <p>for the best recommendation of your.please subscribe us</p>
+    <form action="#">
+        <input type="text" placeholder="enter your email"  />
+        <button class="btn">SUBSCRIBE</button>
+    </form>
+    </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="table-container">
+           
+<div class="Box">
+    <h3>Extra Links</h3>
+       <a href="index.html"><i class="ri-arrow-drop-right-line"></i>Home</a>
+       <a href="#services"><i class="ri-arrow-drop-right-line"></i>our services</a>
+       <a href="#home-about"><i class="ri-arrow-drop-right-line"></i>about us</a>
+         <a href="#home-packages"><i class="ri-arrow-drop-right-line"></i>our packages</a>
+         <a href="#home-destinations"><i class="ri-arrow-drop-right-line"></i>our destinations</a>
+</div>
+
+
+            <div class="Box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="ri-visa-fill"></i>Visa Information</a>
+                <a href="#"><i class="ri-hotel-fill"></i>Hotels</a>
+                <a href="#"><i class="ri-plane-fill"></i>Flights</a>
+                <a href="#"><i class="ri-restaurant-fill"></i>Restaurants</a>
+                <a href="maps.html"><i class="ri-map-pin-2-line"></i>Maps</a>
+                <a href="maps.html"><i class="ri-car-fill"></i>Car Rentals</a>
+            </div>
+            
+            <div class="Box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="ri-phone-fill"></i>09777400000</a>
+                <a href="#"><i class="ri-phone-fill"></i>07655555555</a>
+                <a href="#"><i class="ri-chat-ai-fill"></i>Live Chat</a>
+                <a href="#"><i class="ri-mail-line"></i>example@gmail.com</a>
+                <a href="#"><i class="ri-map-2-line"></i>Lusaka, Zambia</a>
+            </div>
+            
+            <div class="Box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="ri-facebook-circle-fill"></i>Facebook</a>
+                <a href="#"><i class="ri-whatsapp-fill"></i>WhatsApp</a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i>LinkedIn</a>
+                <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="created">Created by Prestone Chooye | &COPY; 2025 All Rights Reserved</div>
+    </section>
+
+    <script src="blog.js"></script>
+</body>
+</html> 

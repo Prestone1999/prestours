@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zambia Maps & Attractions - Prestours</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        .map-container {
+            width: 100%;
+            height: 300%;
+            margin: 2rem 0;
+            margin-top: 100px;
+            align-items: center;
+        }
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .attraction-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .attraction-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .attraction-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .attraction-card .location {
+            color: #4CAF50;
+            font-weight: 500;
+        }
+        .attractions h2{
+            text-align: center;
+
+        }
+        .map-section{
+            margin-top: 70px;
+            text-align: center;
+        font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    Navigation Bar -->
+    <!---- header start---->
+    <section id="home">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="icon/hiking.png" alt="Prestours Logo">
+                </div>
+                <h2>PRES<span>TOURS</span></h2>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active"><i class="ri-home-4-line"></i>Home</a></li>
+                    <li><a href="#package"><i class="ri-suitcase-line"></i>Packages</a></li>
+                    <li><a href="#destination"><i class="ri-map-pin-line"></i>Destinations</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><i class="ri-attractions-line"></i>Attractions</a>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Activities</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>National Parks</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Water Falls</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Lakes & Rivers</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Cities & Towns</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Arts & History</a>
+                            <a href="#"><i class="ri-arrow-drop-right-line"></i>Traditional ceremonies</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><i class="ri-compass-3-line"></i>Discover</a>
+                        <div class="dropdown-content">
+                            <a href="#services"><i class="ri-service-line"></i>Services</a>
+                            <a href="#home-about"><i class="ri-information-line"></i>About Us</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact"><i class="ri-customer-service-2-line"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="ri-article-line"></i>Blog</a> </li>
+                </ul>
+            </div>
+                
+                <div id="menu-btn"><i class="ri-menu-fill"></i></div>
+            </div>
+        </nav>
+         
+    </section>
+
+    <br>
+    <br>
+
+    <section class="map-section">
+        <h2>Zambia Interactive Map</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15384526.123456789!2d25.5!3d-13.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szm!4v1234567890!5m2!1sen!2szm" 
+                width="100%" 
+                height="300%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="attractions">
+        <h2>Popular Attractions</h2>
+        <div class="attractions-grid">
+            <div class="attraction-card">
+                <h3>Victoria Falls</h3>
+                <p>One of the Seven Natural Wonders of the World, located on the Zambezi River.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Livingstone, Southern Province</p>
+            </div>
+            <div class="attraction-card">
+                <h3>South Luangwa National Park</h3>
+                <p>Known for walking safaris and abundant wildlife, including leopards.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Northen Province</p>
+            </div>
+            <div class="attraction-card">
+                <h3>Kafue National Park</h3>
+                <p>Zambia's largest national park, home to diverse wildlife and bird species.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Southen Province</p>
+            </div>
+            <div class="attraction-card">
+                <h3>Lower Zambezi National Park</h3>
+                <p>Famous for river safaris and canoeing adventures.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Southern Province</p>
+            </div>
+            <div class="attraction-card">
+                <h3>Lake Kariba</h3>
+                <p>One of the world's largest man-made lakes, perfect for fishing and water sports.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Southern Province</p>
+            </div>
+
+            <div class="attraction-card">
+                <h3>Lake Kariba</h3>
+                <p>One of the world's largest man-made lakes, perfect for fishing and water sports.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Southern Province</p>
+            </div>
+
+            <div class="attraction-card">
+                <h3>Lake Kariba</h3>
+                <p>One of the world's largest man-made lakes, perfect for fishing and water sports.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Southern Province</p>
+            </div>
+            <div class="attraction-card">
+                <h3>Lusaka National Park</h3>
+                <p>Urban wildlife sanctuary near the capital city.</p>
+                <p class="location"><i class="ri-map-pin-2-line"></i> Lusaka Province</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!----Newsletter---->
+<section class="subscribe">
+
+    <div class="section-container">
+
+        <h2>subscribe to our newsletter</h2>
+    <div>
+    <p>for the best recommendation of your.please subscribe us</p>
+    <form action="#">
+        <input type="text" placeholder="enter your email"  />
+        <button class="btn">SUBSCRIBE</button>
+    </form>
+    </div>
+    </div>
+</section>
+
+<!---- footer start---->
+<section class="footer">
+
+    <div class="table-container">
+    
+    <div class="Box">
+        <h3>Extra Links</h3>
+           <a href="index.html"><i class="ri-arrow-drop-right-line"></i>Home</a>
+           <a href="#services"><i class="ri-arrow-drop-right-line"></i>our services</a>
+           <a href="#home-about"><i class="ri-arrow-drop-right-line"></i>about us</a>
+           <a href="#home-packages"><i class="ri-arrow-drop-right-line"></i>our packages</a>
+          <a href="#home-destinations"><i class="ri-arrow-drop-right-line"></i>our destinations</a>
+    </div>
+    
+    
+                <div class="Box">
+                    <h3>Quick Links</h3>
+                    <a href="#"><i class="ri-visa-fill"></i>Visa Information</a>
+                    <a href="#"><i class="ri-hotel-fill"></i>Hotels</a>
+                    <a href="#"><i class="ri-plane-fill"></i>Flights</a>
+                    <a href="#"><i class="ri-restaurant-fill"></i>Restaurants</a>
+                    <a href="maps.html"><i class="ri-map-pin-2-line"></i>Maps</a>
+                    <a href="car-rental.html"><i class="ri-car-fill"></i>Car Rentals</a>
+                </div>
+    
+    <div class="Box">
+    <h3>Contact info</h3>
+            <a href="#"><i class="ri-phone-fill"></i>09777400000</a>
+            <a href="#"> <i class="ri-phone-fill"></i>07655555555</a>
+            <a href="#"><i class="ri-chat-ai-fill"></i>Livechatbot</a>
+            <a href="#"> <i class="ri-mail-line"></i>example@gmail.com</a>
+            <a href="#"><i class="ri-map-2-line"></i></i>Lusaka zambia</a>
+    </div>
+    
+    <div class="Box">
+    <h3>follow us</h3>
+    
+            <a href="#"><i class="ri-facebook-circle-fill"></i>Facebook</a>
+            <a href="#"> <i class="ri-whatsapp-fill"></i>Whatsapp</a>
+            <a href="#"><i class="ri-linkedin-box-fill"></i>linkedIn</a>
+            <a href="#"> <i class="ri-instagram-fill"></i>Instagram</a>
+    </div>
+    
+    </div>
+    
+    <div class="created">created by prestone chooye | &copy; 2025 all rights reserved</div>
+    </section>
+    <!---- footer ends---->
+
+    <script src="index.js"></script>
+</body>
+</html> 
