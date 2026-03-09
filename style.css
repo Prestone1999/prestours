@@ -15,6 +15,7 @@
 #menu-btn{
     font-size: 1.8rem;
     cursor: pointer;
+    display: none;
 }
 /**---menu ends---*/
 body,html{
@@ -49,14 +50,12 @@ html{
 
 header{
     margin: auto;
-    margin-top: 6%;
     border-radius: 1rem;
-    width: 90%;
-    min-height: 80vh;
+    width: 100%;
+    min-height: 100vh;
     background-position:center;
     background-size: cover; 
     background-repeat: no-repeat;
-    position:relative;
     display: flex;
     background-image: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(images/Namutitima.jpg);
 
@@ -65,7 +64,8 @@ header{
 
 
 .navbar{
-    position: fixed;
+    position:relative;
+    margin-bottom: 200px;
     top: 0;
     left: 0;
     width: 100%;
@@ -114,7 +114,7 @@ header{
     color: #4CAF50;
 }
 
-.nav-menu {
+#nav-menu {
     flex: 1;
     margin: 0 2rem;
 }
@@ -199,17 +199,12 @@ header{
 }
 
 
-#menu-btn {
-    font-size: 1.5rem;
-    color: #333;
-    cursor: pointer;
-
-}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
     .nav-list {
         gap: 1rem;
+        display: block;
     }
     
 
@@ -220,24 +215,34 @@ header{
         padding: 1rem 3%;
     }
     
-    .nav-menu {
-        position: fixed;
+    #nav-menu ul {
+        position:absolute;
+        margin-top: 80px;
         top: 0;
-        right: -100%;
-        width: 300px;
-        height: 100vh;
+        right:0%;
+        width: 100px;
+        display: flex;
+        height:100px;
         background: white;
-        padding: 5rem 2rem;
+        padding: 12rem 10rem;
         transition: all 0.3s ease;
     }
     
     .nav-menu.active {
         right: 0;
+        
     }
     
     .nav-list {
         flex-direction: column;
         align-items: center;
+    
+    }
+    #nav-menu{
+        display: block;
+    }
+    #nav-menu.hidden{
+        display: none;
     }
     
     .dropdown-content {
@@ -254,10 +259,11 @@ header{
     }
     
 
-    #menu-btn {
-        display: block;
-    
-    }
+   #menu-btn{
+    font-size: 5.9rem;
+    cursor: pointer;
+    display: block;
+}
 }
 
 @media (max-width: 576px) {
@@ -266,7 +272,7 @@ header{
     }
     
     .login-btn span {
-        display: none;
+        display: block;
     }
     
     .login-btn {
@@ -308,7 +314,7 @@ header{
 
 .hero-txt h1{
     font-size: 50px;
-    margin-top: 2rem;
+    margin-bottom: 3.5rem;
     font-weight: 1000;
     font-family:Arial, Helvetica, sans-serif;
     transform: translate(-50,-50%);
@@ -320,8 +326,9 @@ header{
 
 }
 .hero-txt p{
+    margin-bottom: 10rem;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 200;
     font-family: "Poppins", sans-serif
 }
 .hero-txt span{
@@ -329,14 +336,14 @@ header{
     font-weight: 300;
     font-size: 30px;
     font-family: fantasy;
+    
 }
 .hero-txt .btn{
     padding: 10px 20px;
-    background:transparent;
+    background-color: #4CAF50;
     border-radius:8px;
-    display: inline-block;
-    margin-top: 1.5rem;
-    margin-bottom: 15rem;
+    display:block;
+    margin-bottom: 20rem;
     color: white;
     border: 2px solid white;
 
